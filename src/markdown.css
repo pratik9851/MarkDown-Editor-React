@@ -1,0 +1,77 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row; /* Display elements side by side */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Left Column (Textarea) */
+.textarea-container {
+  flex: 1; /* Expand to fill available space */
+  padding-right: 10px; /* Add some spacing between columns */
+  display: flex;
+  flex-direction: column; /* Set column elements to stack vertically */
+}
+
+/* Right Column (Markdown Preview) */
+.preview-container {
+  flex: 1; /* Expand to fill available space */
+  padding-left: 10px; /* Add some spacing between columns */
+  display: flex;
+  flex-direction: column; /* Set column elements to stack vertically */
+}
+
+/* Header */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Textarea */
+textarea {
+  flex: 1; /* Expand to fill available space */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 100%;
+  background-color: rgb(233, 234, 234); /* Allow vertical resizing */
+}
+
+/* Markdown Preview */
+.preview {
+  flex: 1; /* Expand to fill available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+  min-height: 100%;
+  background-color: rgb(
+    244,
+    255,
+    255
+  ); /* Add vertical scroll when content overflows */
+}
+
+/* Styling for rendered Markdown content */
+.preview p {
+  margin: 0.5em 0;
+}
+
+.preview a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.preview ul,
+.preview ol {
+  margin: 1em 0;
+  padding-left: 20px;
+}
+
+.preview ul li,
+.preview ol li {
+  margin: 0.5em 0;
+}
